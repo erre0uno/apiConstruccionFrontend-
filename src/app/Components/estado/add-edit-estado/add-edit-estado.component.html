@@ -1,0 +1,44 @@
+<form class="px-3">
+    
+    <div class="mb3 m-3">
+      <label for="id" class="form-label"
+      *ngIf="estado.id!=0"
+      >Id</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="id"
+        name="id"
+        disabled=""
+        *ngIf="estado.id!=0"
+      />
+    </div>
+    <div class="mb3 m-3">
+      <label for="opcionEstado" class="form-label">Opcion estado</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="opcionEstado"
+        name="opcionEstado"
+      />
+    </div>
+    <div class="m-3 text-center ">
+      <button
+        class="btn btn-primary me-3 btn-success"
+        style="width: 100px"
+        (click)="agregarEstado()"
+        *ngIf="estado.id==0"
+      >
+        Crear
+      </button>
+      <button
+        class="btn btn-primary me-3 btn-warning"
+        style="width: 100px"
+        (click)="updateEstado()"
+        *ngIf="estado.id!=0"
+       >
+        Actualizar
+      </button>
+    </div>
+  </form>
+  

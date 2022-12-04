@@ -1,0 +1,43 @@
+<form class="px-3">
+    
+  <div class="mb3 m-3">
+    <label for="id" class="form-label"
+    *ngIf="tipo.id!=0"
+    >Id</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="id"
+      name="id"
+      disabled=""
+      *ngIf="tipo.id!=0"
+    />
+  </div>
+  <div class="mb3 m-3">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="nombre"
+      name="nombre"
+    />
+  </div>
+  <div class="m-3 text-center ">
+    <button
+      class="btn btn-primary me-3 btn-success"
+      style="width: 100px"
+      (click)="agregarTipo()"
+      *ngIf="tipo.id==0"
+    >
+      Crear
+    </button>
+    <button
+      class="btn btn-primary me-3 btn-warning"
+      style="width: 100px"
+      (click)="updateTipo()"
+      *ngIf="tipo.id!=0"
+     >
+      Actualizar
+    </button>
+  </div>
+</form>

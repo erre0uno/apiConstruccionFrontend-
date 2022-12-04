@@ -1,0 +1,65 @@
+<form class="px-3 ">
+    
+    <div class="mb-3">
+    <label for="tipo" class="form-label">Tipo Inspection</label>
+    <input
+      type="text"
+      class="form-control"
+      name="tipoInspeccionId"
+      [(ngModel)]="tipoInspeccionId"
+      *ngIf="inspeccion.id!=0"
+      disabled
+    />
+
+    <select
+      class="form-control"
+      name="inspectionTypeId"
+      id="inspectionTypeId"
+      [(ngModel)]="tipoInspeccionId"
+      *ngIf="inspeccion.id==0"
+    >
+      <option *ngFor="let item of ListTipo$|async" [value]="item.id">
+        {{ item.nombre }}
+      </option>
+    </select>
+  </div>
+  <div class="mb3">
+    <label for="estado" class="form-label">Estado</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="estado"
+      name="estado"
+    />
+  </div>
+  <div class="mb3">
+    <label for="comentarios" class="form-label">Comentarios</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="comentarios"
+      name="comentarios"
+    />
+  </div>
+  <br />
+  <br />
+  <div class="mb3 text-center m-3">
+    <button
+      class="btn btn-primary me-3 btn-success"
+      style="width: 100px"
+      (click)="agregarInspeccion()"
+      *ngIf="inspeccion.id==0"
+    >
+      Crear
+    </button>
+    <button
+      class="btn btn-primary me-3 btn-warning"
+      style="width: 100px"
+      (click)="updateInspeccion()"
+      *ngIf="inspeccion.id!=0"
+    >
+      Actualizar
+    </button>
+  </div>
+</form>
+

@@ -1,3 +1,18 @@
+# Proyecto Angular Frontend Construccion  
+
+## Proyecto desarrollado an Angular manejo de | componentes | crud | relacional | cominicacion de componetes
+
+## `Angular` `Bootstrap` `node` `TypeScript` `html-css`
+
+# Autor:[`Nelson Andres Montealegre`](https://github.com/erre0uno)
+
+![intit](https://github.com/erre0uno/AngularBootstrapProyecto/blob/main/docu/init.png?raw=true)
+
+<br>
+
+![intit](https://github.com/erre0uno/AngularBootstrapProyecto/blob/main/docu/init2.png?raw=true)
+
+
 # FrontConstruccion
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
