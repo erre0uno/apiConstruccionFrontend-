@@ -6,11 +6,11 @@
 
 # Autor:[`Nelson Andres Montealegre`](https://github.com/erre0uno)
 
-![intit](https://github.com/erre0uno/AngularBootstrapProyecto/blob/main/docu/init.png?raw=true)
+![intit](https://github.com/erre0uno/apiConstruccionFrontend-/blob/main/docu/init.png?raw=true)
 
 <br>
 
-![intit](https://github.com/erre0uno/AngularBootstrapProyecto/blob/main/docu/init2.png?raw=true)
+![intit](https://github.com/erre0uno/apiConstruccionFrontend-/blob/main/docu/init2.png?raw=true)
 
 
 # FrontConstruccion
